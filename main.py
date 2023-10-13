@@ -6,6 +6,10 @@ d2, m2, y2 = input("And the second one too as DD MM YY: ").split()
 firstDate = date(int(y1), int(m1), int(d1))
 secondDate = date(int(y2), int(m2), int(d2))
 
-between = abs((firstDate - secondDate).total_seconds())
+seconds = abs((firstDate - secondDate).total_seconds())
 
-print("The amount of days is: " + str(between/86400))
+print(str(seconds) + " seconds")
+print(str(seconds/60) + " minutes")
+print(str(seconds/3600) + " hours")
+print(str(seconds/86400) + " days")
+print(str(seconds/604800) + " weeks")
